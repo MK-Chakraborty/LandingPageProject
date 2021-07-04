@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,ul {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald-Regular;
+    src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald-Medium;
+    src: url(../fonts/Oswald/static/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: Oswald-SemiBold;
+    src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+.fullWraper {
+    width: 100%;
+}
+
+.wraper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+p {
+    font-family: OpenSans-Regular;
+    font-size: 13px; /* 13*1.6 = 20--> LineHeight */
+    color: #555555;
+    line-height: 20px;
+}
+
+a {
+    font-family: Oswald-Regular;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #353535;
+    transition: all linear 0.4s;
+}
+
+h1 {
+    font-family: Oswald-Bold;
+    font-size: 40px;
+    /* line-height: 64px; */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Oswald-Regular;
+    font-size: 30px;
+    /* line-height: 48px; */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h4,
+h3 {
+    font-family: Oswald-Medium;
+    font-size: 24px;
+    color: #353535;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-family: Oswald-Regular;
+    font-size: 13px;
+    color: #555555;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.btnCommon {
+    font-family: Oswald-Medium;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 9px 16px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.btnCommon:hover {
+    background-color: #0872b9;
+    border: #0872b9;
+}
+
+/* Commence of Header Section CSS */
+.headerPart {
+    padding: 10px 0px;
+    background: #0872b9;
+}
+
+.socialIcon,
+.headerContent {
+    width: 460px;
+    float: left;
+    padding: 0px 10px;
+}
+
+.headerContent p {
+    color: #e7e7e7;
+    font-size: 14px;
+}
+
+.socialIcon ul {
+    float: right;
+}
+
+.socialIcon ul li {
+    float: left;
+    position: relative;
+}
+
+.socialIcon ul li::after {
+    position: absolute;
+    width: 2px;
+    top: -1px;
+    left: 34px;
+    height: 20px;
+    background: #ffffff;
+    content: '';
+}
+
+.socialIcon ul li:last-child::after
+{
+    height: 0;
+}
+.socialIcon ul li a {
+    font-size: 14px;
+    color: #e7e7e7;
+    padding: 0px 12px;
+}
+
+.socialIcon ul li:last-child a {
+    padding-right: 0;
+}
+
+.socialIcon ul li:hover a {
+    color: #353535;
+    transition: all linear 0.4s;
+}
+/* Termination of Header Section CSS */
+
+
+/* Commence of Navber CSS */
+.logo {
+    width: 130px;
+    padding: 20px 10px;
+    float: left;
+}
+
+.menu {
+    width: 790px;
+    padding: 33px 10px;
+    float: left;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    padding: 0px 15px;
+}
+
+.menu ul li a:hover {
+    color: #0872b9;
+}
+
+.menu ul li:last-child a{
+    padding-right: 0px;
+}
+/* Termination of Navber CSS */
+
+
+/* Commence of Banner Section CSS */
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background: #0000009e;
+    padding: 85px 0px;
+}
+
+.bannerButton,
+.bannerContent {
+    width: 940px;
+    padding: 0px 10px;
+    text-align: right;
+}
+
+.bannerContent h1 {
+    padding-bottom: 20px;
+}
+
+.bannerContent p {
+    color: #ffffff;
+}
+
+.bannerButton {
+    margin-top: 35px;
+}
+
+/* Termination of Banner Section CSS */
+.pt_10{
+    padding: 10px 0px 6px 0px;
+}
+
+.pt_60 {
+    padding-top: 60px;
+}
+
+.py_60 {
+    padding: 60px 0px;
+}
+
+.sectionHeadLine {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.sectionHeadLine img {
+    margin-left: -35px;
+    margin-top: -20px;
+}
+
+/* Commence of About Section CSS */
+.about .sectionHeadLine {
+    padding-bottom: 40px;
+}
+.aboutImg {
+    width: 380px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.aboutContent {
+    width: 540px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.aboutContent p {
+    padding-top: 40px;
+}
+/* Termination of About Section CSS */
+
+/* Commence of Service Section CSS */
+.service .sectionHeadLine img {
+    margin-left: -75px;
+}
+
+.serviceCatagory {
+    width: 300px;
+    padding: 0px 10px;
+    float: left;
+    position: relative;
+}
+
+.serviceDescription,
+.serviceIcon {
+    background: #f1f1f1;
+}
+
+.serviceDescription {
+    text-align: center;
+    transition: all linear 0.4s;
+}
+
+.serviceDescription h4 {
+    padding-top: 50px;
+}
+
+.serviceDescription p {
+    padding: 20px;
+}
+
+.serviceIcon {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    top: -45px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all linear 0.4s;
+}
+
+.innerIcon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    transition: all linear 0.4s;
+}
+
+.innerIcon img {
+    position: absolute;
+    top: 15px;
+    transform: translateX(55%);
+}
+
+.serviceCatagory:hover .innerIcon,
+.serviceCatagory:hover .serviceIcon {
+    background: #5bc5f4;
+    transition: all linear 0.4s;
+}
+
+.serviceCatagory:hover .serviceDescription {
+    box-shadow: 0px 0px 5px #000000;
+    transition: all linear 0.4s;
+}
+
+.service .sectionHeadLine {
+    padding-bottom: 50px;
+}
+/* Termination of Service Section CSS */
+
+.mt_20 {
+    margin-top: 20px;
+}
+/* Commence of Portfolio Section CSS */
+.portfolio .sectionHeadLine img {
+    margin-left: -87px;
+}
+.imgColumn{
+    width: 220px;
+    margin: 0px 10px;
+    float: left;
+}
+
+.glyImg {
+    position: relative;
+}
+
+.imgOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    transition: all linear 0.4s;
+    background: rgba(0, 0, 0, 0.600);
+}
+
+.glyImg:hover .imgOverlay {
+    height: 100%;
+    opacity: 1;
+}
+
+.imgOverlay a {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5bc5f4;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.imgOverlay a i {
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 27px;
+    top: 15%;
+    left: 27%;
+}
+/* Termination of Portfolio Sectionn CSS */
+
+/* Commence of Team Section CSS */
+.teamMember {
+    margin: 0px 10px;
+    float: left;
+}
+
+.memberImg {
+    position: relative;
+}
+
+.teamOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    text-align: center;
+    transition: all linear 0.4s;
+}
+
+.memberImg:hover .teamOverlay {
+    opacity: 1;
+    width: 80px;
+    transition: all linear 0.4s;
+}
+
+.teamOverlay a {
+    text-align: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #ffffff;
+    margin: 21px 18px;
+    transition: all linear 0.4s;
+}
+
+.teamOverlay a:hover {
+    background: #0872b9;
+    border: #0872b9;
+    transition: all linear 0.4s;
+}
+
+.teamOverlay a i {
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.memberName {
+    text-align: center;
+    padding-top: 10px;
+    transition: all linear 0.4s;
+}
+
+.teamMember:hover .memberName h4 {
+    color: #5bc5f4;
+    transition: all linear 0.4s;
+}
+/* Termination of Team Section CSS */
+
+/* Commence of Testimonial Section CSS */
+.testimonial .sectionHeadLine img{
+    margin-left: -62px;
+}
+
+.tmItem {
+    width: 460px;
+    margin: 0px 10px;
+    float: left;
+}
+
+.tmItemImg {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.tmItemImg img{
+    width: 200px;
+    margin-left: -56px;
+}
+
+.tmItemDesp {
+    text-align: center;
+    background: #f1f1f1;
+    position: relative;
+    padding-top: 24px;
+    margin-top: 30px;
+}
+
+.tmItemDesp::after {
+    position: absolute;
+    left: 210px;
+    top: -7px;
+    background: #f1f1f1;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    content: '';
+}
+
+.tmItemDesp span i {
+    color: #5bc5f4;
+    font-size: 13px;
+}
+
+.tmItemDesp p {
+    padding: 12px 20px 20px 20px;
+}
+
+/* Termination of Testimonial Section CSS */
+
+/* Commence of Footer Section CSS */
+.footer {
+    background: #353535;
+    padding: 20px 0px;
+}
+
+.photos,
+.links,
+.contact,
+.ftDesp {
+    width: 220px;
+    margin: 0px 10px;
+    float: left;
+}
+
+.links {
+    width: 140px;
+}
+
+.photos {
+    width: 300px;
+}
+
+.headTitle {
+    padding-bottom: 30px;
+}
+
+.headTitle h4 {
+    color: #ffffff;
+}
+
+.desp p {
+    color: #ffffff;
+    padding-bottom: 35px;
+}
+
+.phone, 
+.mail,
+.web {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 45px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #5bc5f4;
+    float: left;
+    position: relative;
+
+}
+
+.icon i {
+    font-size: 20px;
+    color: #ffffff;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.info {
+    width: 175px;
+    padding-left: 10px;
+    float: left;
+}
+
+.info p {
+    color: #ffffff;
+}
+
+.linkColumn {
+    float: left;
+    width: 60px;
+}
+
+.pl_20 {
+    padding-left: 20px;
+}
+
+.linkColumn ul li a{
+    display: block;
+    color: #ffffff;
+    padding: 6px 0px;
+    font-weight: 100;
+}
+
+.linkColumn ul li:hover a {
+    color: #5bc5f4;
+}
+
+.ftImgColumn {
+    width: 90px;
+    float: left;
+}
+
+.ftImgColumn img {
+    margin: 7.5px 0px;
+}
+
+.pd_lr_10 {
+    padding: 0px 15px;
+}
+/* Termination of Footer Section CSS */
